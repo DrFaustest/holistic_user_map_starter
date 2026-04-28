@@ -2,5 +2,26 @@
 __pycache__/
 .pytest_cache/
 *.pyc
+
+# Local environment and secret files
 .env
+.env.*
+*.env
+*.local
+
+# Persisted local user/profile data
+data/*.db
+data/*.sqlite
+data/*.sqlite3
+data/*.db-*
+
+# Generated benchmark artifacts
 data/reports/
+
+# Private keys and certificates
+*.pem
+*.key
+*.crt
+*.cer
+*.p12
+*.pfx
