@@ -1,0 +1,32 @@
+[
+  {
+    "name": "human_deep_memory_engineer",
+    "source": "human_labeled",
+    "preferred_style": "deep",
+    "preferred_topics": ["llm", "memory"],
+    "request_template": "I am designing an assistant. Explain {topic} in technical depth.",
+    "positive_feedback": "Thanks, that matched the technical depth and topic focus I wanted.",
+    "negative_feedback_style": "That was too shallow. I wanted a deeper technical explanation.",
+    "negative_feedback_topic_template": "Please focus more on {topic}."
+  },
+  {
+    "name": "human_brief_product_owner",
+    "source": "human_labeled",
+    "preferred_style": "brief",
+    "preferred_topics": ["context", "pipeline"],
+    "request_template": "Give me the core product takeaway about {topic}.",
+    "positive_feedback": "Good, that was concise and focused.",
+    "negative_feedback_style": "That was too long. Keep it brief and concise.",
+    "negative_feedback_topic_template": "Please focus more on {topic}."
+  },
+  {
+    "name": "human_deep_learning_researcher",
+    "source": "human_labeled",
+    "preferred_style": "deep",
+    "preferred_topics": ["learning", "education"],
+    "request_template": "Walk me through how {topic} affects user modeling in detail.",
+    "positive_feedback": "Thanks, that gave me the detailed framing I needed.",
+    "negative_feedback_style": "That was too high level. I wanted a more detailed explanation.",
+    "negative_feedback_topic_template": "Please focus more on {topic}."
+  }
+]
